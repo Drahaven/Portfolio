@@ -49,6 +49,46 @@ namespace Portfolio
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
+                    name: "Contact",
+                    pattern: "Contact",
+                    defaults: new { controller = "Contact", action = "Contact" }
+                    );
+                endpoints.MapControllerRoute(
+                    name: "Exp",
+                    pattern: "Experiences_professionnelles",
+                    defaults: new { controller = "Experiences", action = "ExperiencesPro" }
+                    );
+                endpoints.MapControllerRoute(
+                    name: "Formations",
+                    pattern: "Formations",
+                    defaults: new { controller = "Experiences", action = "Formations" }
+                    );
+
+                endpoints.MapControllerRoute(
+                    name: "TicketCine",
+                    pattern: "Realisations/TicketCinema",
+                    defaults: new { controller = "Home", action = "TicketCine" }
+                    );
+
+                endpoints.MapControllerRoute(
+                    name: "AvisFormation",
+                    pattern: "Realisations/AvisFormation",
+                    defaults: new { controller = "Home", action = "AvisFormation" }
+                    );
+
+                endpoints.MapControllerRoute(
+                    name: "SimplyOrNot",
+                    pattern: "Realisations/SimplyOrNot",
+                    defaults: new { controller = "Home", action = "SimplyOrNot" }
+                    );
+
+                endpoints.MapControllerRoute(
+                    name: "CodeIgniter",
+                    pattern: "Realisations/CodeIgniter",
+                    defaults: new { controller = "Home", action = "CodeIgniter" }
+                    );
+
+                endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
