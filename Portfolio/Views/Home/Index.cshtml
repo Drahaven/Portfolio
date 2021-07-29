@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="jumbotron text-center">
+    <h1>Mes réalisations</h1>
+</div>
+<section class="real">
+    <div class="row  text-center justify-content-md-center">
+        <div class="card col-md-9">
+            <a asp-controller="Home" asp-action="AvisFormation"><h2>Avis formation</h2></a>
+            <p>Un site web avec AspNet core 3.1.</p>
+            <span class="fas fa-globe fa-3x"></span>
+        </div>
+        <div class="card col-md-4">
+            <a asp-controller="Home" asp-action="SimplyOrNot"><h2>Simply or not</h2></a>
+            <p>Un logiciel de gestion des congés et des heures supplémentaires pour une mairie.</p>
+            <span class="fas fa-calendar-minus fa-3x"></span>
+        </div>
+        <div class="card col-md-4">
+            <a asp-controller="Home" asp-action="TicketCine"><h2>Ticket de cinéma</h2></a>
+            <p>Un logiciel pour simuler le prix de son ticket au cinéma.</p>
+            <span class="fas fas fa-film fa-3x"></span>
+        </div>
+        <div class="card col-md-9">
+            <a asp-controller="Home" asp-action="CodeIgniter"><h2>CodeIgniter</h2></a>
+            <p>Un site internet utilisant le framework codeIgniter.</p>
+            <span class="fas fas fa-seedling fa-3x"></span>
+        </div>
+    </div>
+</section>
